@@ -1,43 +1,51 @@
-# Digital Dreams Media - Plan and Strategy
+# Digital Dreams Media
 
-A comprehensive media planning and digital marketing strategy framework for Digital Dreams Media.
+A landing page and digital marketing strategy for Digital Dreams Media — a creative digital agency.
+
+## Website
+
+Open `index.html` in a browser to view the landing page.
+
+### Features
+
+- Fully responsive design (mobile, tablet, desktop)
+- Dark theme with gradient accents
+- Animated hero section with floating particles
+- Counter animations on scroll
+- Portfolio section with category filtering
+- Testimonial slider with auto-advance
+- Contact form with validation
+- Smooth scroll navigation
+- Mobile hamburger menu
 
 ## Project Structure
 
 ```
+├── index.html                          # Landing page
+├── css/
+│   └── styles.css                      # Stylesheet
+├── js/
+│   └── main.js                         # Interactive features
+├── images/
+│   ├── logo.svg                        # Logo
+│   ├── favicon.svg                     # Favicon
+│   └── og-image.svg                    # Social sharing image
 ├── strategy/
-│   ├── digital-marketing-strategy.md    # Core digital marketing strategy
-│   ├── content-strategy.md              # Content planning and calendar
-│   └── social-media-strategy.md         # Platform-specific social media plans
+│   ├── digital-marketing-strategy.md   # Marketing strategy
+│   ├── content-strategy.md             # Content planning
+│   └── social-media-strategy.md        # Social media plans
 ├── brand/
-│   └── brand-guidelines.md              # Brand identity and guidelines
+│   └── brand-guidelines.md             # Brand identity
 ├── budget/
-│   └── budget-plan.md                   # Budget allocation and tracking
-├── analytics/
-│   └── kpi-framework.md                 # KPIs, metrics, and reporting
-└── README.md
+│   └── budget-plan.md                  # Budget allocation
+└── analytics/
+    └── kpi-framework.md                # KPIs and metrics
 ```
 
-## Overview
+## Tech Stack
 
-Digital Dreams Media is a forward-thinking media company focused on delivering impactful digital experiences. This repository contains the strategic planning documents, brand guidelines, content calendars, and performance tracking frameworks that guide our operations.
-
-## Key Areas
-
-- **Digital Marketing Strategy** - SEO, SEM, paid advertising, email marketing
-- **Content Strategy** - Blog, video, podcast, and visual content planning
-- **Social Media** - Platform-specific strategies for engagement and growth
-- **Brand Guidelines** - Visual identity, tone of voice, messaging framework
-- **Budget Planning** - Resource allocation across channels and campaigns
-- **Analytics & KPIs** - Performance measurement and optimization
-
-## Getting Started
-
-Review the documents in the following order:
-
-1. `brand/brand-guidelines.md` - Understand our brand identity
-2. `strategy/digital-marketing-strategy.md` - Review the overall strategy
-3. `strategy/content-strategy.md` - Explore content planning
-4. `strategy/social-media-strategy.md` - Review social media approach
-5. `budget/budget-plan.md` - Understand budget allocation
-6. `analytics/kpi-framework.md` - Review success metrics
+- HTML5
+- CSS3 (Custom properties, Grid, Flexbox, animations)
+- Vanilla JavaScript (no dependencies)
+- SVG graphics
+- Google Fonts (Inter, Space Grotesk)
