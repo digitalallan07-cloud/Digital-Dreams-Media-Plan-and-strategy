@@ -1,0 +1,22 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a1a" />
+      <stop offset="100%" style="stop-color:#12122a" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6c5ce7" />
+      <stop offset="50%" style="stop-color:#a29bfe" />
+      <stop offset="100%" style="stop-color:#00cec9" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="200" cy="315" r="300" fill="#6c5ce7" opacity="0.05"/>
+  <circle cx="1000" cy="315" r="300" fill="#00cec9" opacity="0.05"/>
+  <!-- Logo -->
+  <path d="M560 240L600 220L640 240V280L600 300L560 280V240Z" fill="url(#accent)"/>
+  <path d="M560 280L600 260L640 280" fill="none" stroke="#0a0a1a" stroke-width="2" opacity="0.3"/>
+  <!-- Text -->
+  <text x="600" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="white">Digital Dreams Media</text>
+  <text x="600" y="410" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#9090b0">Creative Digital Solutions</text>
+</svg>
