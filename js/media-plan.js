@@ -234,7 +234,7 @@ function initDrawLines() {
         });
     }, { threshold: 0.2 });
 
-    document.querySelectorAll('.investigation-card, .kpi-report-card').forEach(function (card) {
+    document.querySelectorAll('.investigation-card, .kpi-report-card, .investigation-card-white, .kpi-card-white').forEach(function (card) {
         observer.observe(card);
     });
 }
