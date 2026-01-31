@@ -844,8 +844,13 @@
                 <p class="section-subtitle-dark">Diagnosing performance gaps and tracking the metrics that matter for proving ROI.</p>
             </div>
 
-            <!-- Analytics Cards - 5 Side by Side -->
-            <div class="analytics-cards-grid" data-aos="fade-up">
+            <!-- CTR Troubleshooting Question -->
+            <div class="analytics-question" data-aos="fade-up">
+                <h3 class="analytics-question-text">If your ads have a high Click-Through Rate (CTR) but zero sales/leads, what <span class="gradient-text">3 specific areas</span> would you investigate first?</h3>
+            </div>
+
+            <!-- 3 CTR Troubleshooting Cards -->
+            <div class="analytics-cards-grid analytics-grid-3" data-aos="fade-up">
                 <div class="analytics-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="analytics-card-accent" style="background: linear-gradient(135deg, #6c5ce7, #00cec9);"></div>
                     <div class="analytics-card-body">
@@ -877,7 +882,7 @@
                             </svg>
                         </div>
                         <div class="analytics-card-number">02</div>
-                        <h4>Audience Intent & Targeting</h4>
+                        <h4>Audience Intent & Targeting vs. Offer</h4>
                         <p>High CTR with wrong audience means curiosity clicks, not buying intent. Match targeting to offer stage.</p>
                         <div class="analytics-sparkline">
                             <svg viewBox="0 0 100 30"><polyline points="0,28 20,24 40,18 55,16 70,10 85,8 100,4" fill="none" stroke="#00cec9" stroke-width="2" stroke-linecap="round" class="draw-line"/></svg>
@@ -898,15 +903,23 @@
                             </svg>
                         </div>
                         <div class="analytics-card-number">03</div>
-                        <h4>Ad-to-Page Message Match</h4>
+                        <h4>Ad-to-Landing Page Message Match</h4>
                         <p>Disconnect between ad promise and landing page content breaks trust instantly. Ensure copy consistency.</p>
                         <div class="analytics-sparkline">
                             <svg viewBox="0 0 100 30"><polyline points="0,26 18,22 35,20 50,15 68,12 82,8 100,5" fill="none" stroke="#6c5ce7" stroke-width="2" stroke-linecap="round" class="draw-line"/></svg>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="analytics-card" data-aos="fade-up" data-aos-delay="250">
+            <!-- KPI Question -->
+            <div class="analytics-question" data-aos="fade-up">
+                <h3 class="analytics-question-text">KPIs: List the top <span class="gradient-text">4 metrics</span> you would report to management weekly to prove ROI</h3>
+            </div>
+
+            <!-- 4 KPI Cards -->
+            <div class="analytics-cards-grid analytics-grid-4" data-aos="fade-up">
+                <div class="analytics-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="analytics-card-accent" style="background: linear-gradient(135deg, #00cec9, #6c5ce7);"></div>
                     <div class="analytics-card-body">
                         <div class="analytics-card-icon">
@@ -915,8 +928,8 @@
                                 <path d="M12 24V16M18 24V12M24 24V8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
                             </svg>
                         </div>
-                        <div class="analytics-card-number">04</div>
-                        <h4>Cost per Qualified Lead</h4>
+                        <div class="analytics-card-number">01</div>
+                        <h4>Cost per Qualified Lead (CPL)</h4>
                         <p>Not just any lead — the cost to acquire leads that meet qualification criteria and enter the pipeline.</p>
                         <div class="analytics-sparkline">
                             <svg viewBox="0 0 100 30"><polyline points="0,25 12,20 28,22 45,15 60,12 78,7 100,3" fill="none" stroke="#00cec9" stroke-width="2" stroke-linecap="round" class="draw-line"/></svg>
@@ -924,8 +937,26 @@
                     </div>
                 </div>
 
-                <div class="analytics-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="analytics-card" data-aos="fade-up" data-aos-delay="150">
                     <div class="analytics-card-accent" style="background: linear-gradient(135deg, #a29bfe, #00cec9);"></div>
+                    <div class="analytics-card-body">
+                        <div class="analytics-card-icon">
+                            <svg width="32" height="32" viewBox="0 0 40 40" fill="none">
+                                <path d="M8 20H16L20 8L24 28L28 16H32" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="20" cy="20" r="16" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>
+                            </svg>
+                        </div>
+                        <div class="analytics-card-number">02</div>
+                        <h4>Lead to Appointment Ratio</h4>
+                        <p>The percentage of leads that convert into booked appointments — a key indicator of lead quality and follow-up effectiveness.</p>
+                        <div class="analytics-sparkline">
+                            <svg viewBox="0 0 100 30"><polyline points="0,28 15,25 30,20 50,16 65,12 80,8 100,4" fill="none" stroke="#a29bfe" stroke-width="2" stroke-linecap="round" class="draw-line"/></svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="analytics-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="analytics-card-accent" style="background: linear-gradient(135deg, #6c5ce7, #00cec9);"></div>
                     <div class="analytics-card-body">
                         <div class="analytics-card-icon">
                             <svg width="32" height="32" viewBox="0 0 40 40" fill="none">
@@ -934,11 +965,30 @@
                                 <path d="M4 32H36" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>
                             </svg>
                         </div>
-                        <div class="analytics-card-number">05</div>
-                        <h4>Conversion Rate Tracking</h4>
+                        <div class="analytics-card-number">03</div>
+                        <h4>Conversion Rate (Landing Page or Form)</h4>
                         <p>Percentage of visitors completing the desired action — the ultimate measure of landing page effectiveness.</p>
                         <div class="analytics-sparkline">
-                            <svg viewBox="0 0 100 30"><polyline points="0,28 15,25 30,20 50,16 65,12 80,8 100,4" fill="none" stroke="#a29bfe" stroke-width="2" stroke-linecap="round" class="draw-line"/></svg>
+                            <svg viewBox="0 0 100 30"><polyline points="0,26 18,22 35,20 50,15 68,12 82,8 100,5" fill="none" stroke="#6c5ce7" stroke-width="2" stroke-linecap="round" class="draw-line"/></svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="analytics-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="analytics-card-accent" style="background: linear-gradient(135deg, #55efc4, #6c5ce7);"></div>
+                    <div class="analytics-card-body">
+                        <div class="analytics-card-icon">
+                            <svg width="32" height="32" viewBox="0 0 40 40" fill="none">
+                                <path d="M6 30L14 18L22 22L30 10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M26 10H32V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4 34H36" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>
+                            </svg>
+                        </div>
+                        <div class="analytics-card-number">04</div>
+                        <h4>Channel Spend vs Lead Quality Trend</h4>
+                        <p>Tracking how budget allocation across channels correlates with lead quality over time to optimize spend efficiency.</p>
+                        <div class="analytics-sparkline">
+                            <svg viewBox="0 0 100 30"><polyline points="0,25 15,22 30,18 50,14 65,10 80,6 100,3" fill="none" stroke="#55efc4" stroke-width="2" stroke-linecap="round" class="draw-line"/></svg>
                         </div>
                     </div>
                 </div>

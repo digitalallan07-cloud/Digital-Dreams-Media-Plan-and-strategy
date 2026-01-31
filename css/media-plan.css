@@ -959,12 +959,34 @@ ul { list-style: none; }
 }
 
 /* Analytics Cards - 5 Side by Side Grid */
+.analytics-question {
+    text-align: center;
+    margin-bottom: 32px;
+    margin-top: 48px;
+}
+.analytics-question:first-of-type {
+    margin-top: 0;
+}
+.analytics-question-text {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2d3436;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
+}
 .analytics-cards-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
     position: relative;
     z-index: 1;
+}
+.analytics-grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+.analytics-grid-4 {
+    grid-template-columns: repeat(4, 1fr);
 }
 .analytics-card {
     display: flex;
@@ -1057,6 +1079,8 @@ ul { list-style: none; }
     .kpi-report-grid { grid-template-columns: repeat(2, 1fr); }
     .kpi-grid-white { grid-template-columns: repeat(2, 1fr); }
     .analytics-cards-grid { grid-template-columns: repeat(3, 1fr); }
+    .analytics-grid-3 { grid-template-columns: repeat(3, 1fr); }
+    .analytics-grid-4 { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 768px) {
@@ -1080,6 +1104,9 @@ ul { list-style: none; }
     .investigation-grid-horizontal { grid-template-columns: 1fr; }
     .kpi-grid-white { grid-template-columns: 1fr; }
     .analytics-cards-grid { grid-template-columns: 1fr; }
+    .analytics-grid-3 { grid-template-columns: 1fr; }
+    .analytics-grid-4 { grid-template-columns: 1fr; }
+    .analytics-question-text { font-size: 1.1rem; }
     .section-technical { padding: 80px 0; }
     .funnel-flow { flex-direction: column; align-items: center; }
     .funnel-connector { transform: rotate(90deg); padding: 12px 0; }
