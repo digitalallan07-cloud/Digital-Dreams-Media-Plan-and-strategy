@@ -11,6 +11,8 @@ document.addEventListener('DOMContentLoaded', function () {
     initScrollAnimations();
     initParallax();
     initDonutAnimation();
+    initBarAnimations();
+    initDrawLines();
 });
 
 /* --- Navbar Scroll Effect --- */
@@ -187,4 +189,52 @@ function initDonutAnimation() {
     }, { threshold: 0.3 });
 
     observer.observe(chart);
+}
+
+/* --- LP Element Bar Animations --- */
+function initBarAnimations() {
+    var elements = document.querySelectorAll('.lp-element');
+    if (elements.length === 0) return;
+
+    var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('bar-animated');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.3 });
+
+    elements.forEach(function (el) { observer.observe(el); });
+}
+
+/* --- Draw Line Animations --- */
+function initDrawLines() {
+    var lines = document.querySelectorAll('.draw-line');
+    if (lines.length === 0) return;
+
+    lines.forEach(function (line) {
+        var length = line.getTotalLength ? line.getTotalLength() : 200;
+        line.style.strokeDasharray = length;
+        line.style.strokeDashoffset = length;
+    });
+
+    var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                var lines = entry.target.querySelectorAll('.draw-line');
+                lines.forEach(function (line, i) {
+                    setTimeout(function () {
+                        line.style.transition = 'stroke-dashoffset 1.5s ease-out';
+                        line.style.strokeDashoffset = '0';
+                    }, i * 200);
+                });
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll('.investigation-card, .kpi-report-card').forEach(function (card) {
+        observer.observe(card);
+    });
 }
